@@ -13,7 +13,7 @@ class Game{
         //make the circles
         for(var i=0; i<25; i++){
             //create circle
-            let newCirc = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            let newCirc = document.createElementNS("http:// www.w3.org/2000/svg", "circle");    
             newCirc.setAttribute("radius", 15);
 
             newCirc.classList.add("gameCirc");

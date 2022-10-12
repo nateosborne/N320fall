@@ -1,0 +1,17 @@
+.game{
+    display: flex;
+}
+
+.board{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 100px;
+    width: 50px;
+}
