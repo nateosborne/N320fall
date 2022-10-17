@@ -8,15 +8,124 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="game">
-      <div class="board"></div>
-      <div class="colors">
+    <div class="page">
+      <div class="game">
+        <div class="board">
+          <div class="boardspaces">
+            <div class="boardspacescontainer">
+              <div id="boardspace1" class="boardspace1">1</div>
+              <div id="boardspace2" class="boardspace1">2</div>
+              <div id="boardspace3" class="boardspace1">3</div>
+              <div id="boardspace4" class="boardspace1">4</div>
+              <div id="boardspace5" class="boardspace1">5</div>
+              <div id="boardspace6" class="boardspace1">6</div>
+              <div id="boardspace7" class="boardspace1">7</div>
+            </div>
+            <div class="boardspacescontainer">
+              <div id="boardspace24" class="boardspace1">24</div>
+              <div id="boardspace8" class="boardspace1">8</div>
+            </div>
+            <div class="boardspacescontainer">
+              <div id="boardspace23" class="boardspace1">23</div>
+              <div id="boardspace9" class="boardspace1">9</div>
+            </div>
+            <div class="boardspacescontainer">
+              <div id="boardspace22" class="boardspace1">22</div>
+              <div id="boardspace10" class="boardspace1">10</div>
+            </div>
+            <div class="boardspacescontainer">
+              <div id="boardspace21" class="boardspace1">21</div>
+              <div id="boardspace11" class="boardspace1">11</div>
+            </div>
+            <div class="boardspacescontainer">
+              <div id="boardspace20" class="boardspace1">20</div>
+              <div id="boardspace12" class="boardspace1">12</div>
+            </div>
+            <div class="boardspacescontainer">
+              <div id="boardspace19" class="boardspace1">19</div>
+              <div id="boardspace18" class="boardspace1">18</div>
+              <div id="boardspace17" class="boardspace1">17</div>
+              <div id="boardspace16" class="boardspace1">16</div>
+              <div id="boardspace15" class="boardspace1">15</div>
+              <div id="boardspace14" class="boardspace1">14</div>
+              <div id="boardspace13" class="boardspace1">13</div>
+            </div>
+          </div>
+        </div>
+        <div class="boardmiddle">
+          <div class="tophomes">
+            <div class="redhome">
+              <div class="redstart">
+                < START
+                <div class="pieces">
+                  <div id="redpiece1" class="redpiece1"></div>
+                  <div id="redpiece2" class="redpiece1"></div>
+                  <div id="redpiece3" class="redpiece1"></div>
+                  <div id="redpiece4" class="redpiece1"></div>
+                </div>
+              </div>
+              <div class="redsafe">
+                <div class="redsafespaces">
+                  <div class="redsafespace1"></div>
+                  <div class="redsafespace1"></div>
+                  <div class="redsafespace1"></div>
+                  <div class="redsafespace1">HOME</div>
+                </div>
+              </div>
+            </div>
+            <div class="bluehome">
+              <div class="bluesafe">
+                <div class="bluesafespaces">
+                  <div class="bluesafespace1"></div>
+                  <div class="bluesafespace1"></div>
+                  <div class="bluesafespace1"></div>
+                  <div class="bluesafespace1">HOME</div>
+                </div>
+              </div>
+              <div class="bluestart">START</div>
+            </div>
+          </div>
+          <div class="bottomhomes">
+            <div class="greenhome">
+              <div class="greenstart">START</div>
+              <div class="greensafe">
+                <div class="greensafespaces">
+                  <div class="greensafespace1">HOME</div>
+                  <div class="greensafespace1"></div>
+                  <div class="greensafespace1"></div>
+                  <div class="greensafespace1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="yellowhome">
+              <div class="yellowsafe">
+                <div class="yellowsafespaces">
+                  <div class="yellowsafespace1">HOME</div>
+                  <div class="yellowsafespace1"></div>
+                  <div class="yellowsafespace1"></div>
+                  <div class="yellowsafespace1"></div>
+                </div>
+              </div>
+              <div class="yellowstart">START</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="colors">
         <button>RED</button>
         <button>BLUE</button>
         <button>YELLOW</button>
         <button>GREEN</button>
+      </div> -->
+      <div class="rules">
+        <h1>RULES</h1>
+        <p>
+          Pick up your card to start, if you get either a 1 or a 2, click on
+          your first piece to move it out of start.
+        </p>
       </div>
-      <button class="card" onclick="card()">PICK UP CARD</button>
+      <button class="cardbutton" onclick="card()">PICK UP CARD</button>
+      <div id="newcard" class="newcard"></div>
     </div>
 
     <script src="js/app.js"></script>
