@@ -1,3 +1,4 @@
+//initializing variables
 let piecenum = 0;
 let homenum = 0;
 let boardspacenum = 0;
@@ -5,6 +6,7 @@ let boardspacenum2 = 0;
 let boardspacenum3 = 0;
 let boardspacenum4 = 0;
 
+//animating page-in
 let page = document.getElementsByClassName("page");
 
     for(let i = 0; i < page.length; i++){
@@ -23,6 +25,7 @@ function card(){
     document.getElementById("newcard").style.width = "200px";
     document.getElementById("newcard").innerHTML = [cards];
 
+    //animating card
     let newcardT = document.getElementsByClassName("newcard");
 
     for(let i = 0; i < newcardT.length; i++){
@@ -81,6 +84,7 @@ function card(){
     }
 }
     
+    //moving pieces around board
     document.getElementById("movespaces").onclick = function(){
         document.getElementById("redpiece1").onclick = function() {
             var fragment = document.createDocumentFragment();
