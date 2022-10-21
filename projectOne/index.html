@@ -66,28 +66,44 @@
               </div>
               <div class="redsafe">
                 <div class="redsafespaces">
-                  <div class="redsafespace1"></div>
-                  <div class="redsafespace1"></div>
-                  <div class="redsafespace1"></div>
-                  <div class="redsafespace1">HOME</div>
+                  <div id="boardspacered24" class="redsafespace1"></div>
+                  <div id="boardspacered25" class="redsafespace1"></div>
+                  <div id="boardspacered26" class="redsafespace1"></div>
+                  <div id="boardspacered27" class="redsafespace1">HOME</div>
                 </div>
               </div>
             </div>
             <div class="bluehome">
               <div class="bluesafe">
                 <div class="bluesafespaces">
-                  <div class="bluesafespace1"></div>
-                  <div class="bluesafespace1"></div>
-                  <div class="bluesafespace1"></div>
-                  <div class="bluesafespace1">HOME</div>
+                  <div id="boardspaceblue6" class="bluesafespace1"></div>
+                  <div id="boardspaceblue7" class="bluesafespace1"></div>
+                  <div id="boardspaceblue8" class="bluesafespace1"></div>
+                  <div id="boardspaceblue9" class="bluesafespace1">HOME</div>
                 </div>
               </div>
-              <div class="bluestart">START</div>
+              <div class="bluestart">
+                START /\
+                <div class="pieces">
+                  <div id="bluepiece1" class="bluepiece1"></div>
+                  <div id="bluepiece2" class="bluepiece1"></div>
+                  <div id="bluepiece3" class="bluepiece1"></div>
+                  <div id="bluepiece4" class="bluepiece1"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="bottomhomes">
             <div class="greenhome">
-              <div class="greenstart">START</div>
+              <div class="greenstart">
+                START \/
+                <div class="pieces">
+                  <div id="greenpiece1" class="greenpiece1"></div>
+                  <div id="greenpiece2" class="greenpiece1"></div>
+                  <div id="greenpiece3" class="greenpiece1"></div>
+                  <div id="greenpiece4" class="greenpiece1"></div>
+                </div>
+              </div>
               <div class="greensafe">
                 <div class="greensafespaces">
                   <div class="greensafespace1">HOME</div>
@@ -106,7 +122,15 @@
                   <div class="yellowsafespace1"></div>
                 </div>
               </div>
-              <div class="yellowstart">START</div>
+              <div class="yellowstart">
+                START >
+                <div class="pieces">
+                  <div id="yellowpiece1" class="yellowpiece1"></div>
+                  <div id="ellowpiece2" class="yellowpiece1"></div>
+                  <div id="yellowpiece3" class="yellowpiece1"></div>
+                  <div id="yellowpiece4" class="yellowpiece1"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -120,14 +144,21 @@
       <div class="rules">
         <h1>RULES</h1>
         <p>
-          Pick up your card to start, if you get either a 1 or a 2, click on
-          your first piece to move it out of start.
+          Pick up your card to start, if you get either a 1 or a 2, you may
+          choose to move your pawn out of start. On every card pickup, you MUST
+          choose to either move your pawn out of start or move one already on
+          the board around the spaces.
         </p>
       </div>
-      <button class="cardbutton" onclick="card()">PICK UP CARD</button>
+      <button class="cardbutton" onclick="card()">RED PICK UP CARD</button>
+      <!-- <button class="cardbutton" onclick="cardB()">BLUE PICK UP CARD</button> -->
       <div id="newcard" class="newcard"></div>
+      <button id="movestart" class="movestart">Move pawn out of start</button>
+      <button id="movespaces" class="movespaces">Move pawn spaces</button>
     </div>
+    <div id="win" class="win"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
