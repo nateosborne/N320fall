@@ -26,7 +26,7 @@ function card(){
     let newcardT = document.getElementsByClassName("newcard");
 
     for(let i = 0; i < newcardT.length; i++){
-        TweenLite.from(newcardT[i], {duration: 1.5, alpha:0 });
+        TweenLite.from(newcardT[i], {duration: .5 , alpha:0 });
     }
 
     //moves pieces from start
@@ -142,6 +142,12 @@ function card(){
                 homenum = 4;
                 document.getElementById("win").innerHTML = "YOU WIN!";
                 document.getElementById("win").style.fontSize = "100px";
+
+                let win = document.getElementsByClassName("win");
+
+                for(let i = 0; i < win.length; i++){
+                    TweenLite.from(win[i], {duration: .5 , alpha:0 });
+                }
             }
         }
 
