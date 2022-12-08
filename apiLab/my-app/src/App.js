@@ -1,16 +1,22 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
-// import { MarsGallery } from "./MarsGallery";
+import { MarsGallery } from "./MarsGallery";
 import { NasaAPIConnection } from "./DataConnection";
+import Snowfall from "react-snowfall";
 
 function App() {
   const [year, setYear] = useState(2010);
   const [pics, setPics] = useState([]);
 
-  useEffect(async () => {
-    let returnedPictures = await NasaAPIConnection(year);
-    setPics(returnedPictures.photos);
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      let returnedPictures = await NasaAPIConnection(year);
+      setPics(returnedPictures.photos);
+      console.log(returnedPictures.photos);
+    }, 1000);
+
+    return () => clearInterval(timer);
   }, [year]);
 
   return (
@@ -27,6 +33,8 @@ function App() {
         }}
       ></input>
       <div>{year}</div>
+      <MarsGallery images={pics} />
+      <Snowfall />
     </div>
   );
 }
